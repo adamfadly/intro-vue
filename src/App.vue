@@ -2,7 +2,10 @@
   <div id="app">
     <div id="nav">
       <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <router-link to="/attribute-binding">Att Binding</router-link> |
+      <router-link to="/conditional-rendering"
+        >Conditional Rendering</router-link
+      >
     </div>
     <router-view />
   </div>
