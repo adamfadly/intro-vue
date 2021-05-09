@@ -13,6 +13,18 @@
         it's only {{ inventory }} left, HURRYY!!!!
       </p>
       <p v-else>Out of Stock</p>
+
+      <div>
+        <p>Details</p>
+        <ul v-for="detail in details" :key="detail.index">
+          <li>{{ detail }}</li>
+        </ul>
+      </div>
+      <!-- <div>
+        <ul v-for="variant in variants" :key="variant.variantId">
+          <li>{{ variant.variantColor }}</li>
+        </ul>
+      </div> -->
     </div>
   </div>
 </template>
