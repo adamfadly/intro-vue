@@ -6,6 +6,7 @@
 
     <div class="product-info">
       <h1>{{ product }}</h1>
+      <p v-show="onSaleView">On Sale</p>
       <p v-if="inventory > 10">in Stock</p>
       <p v-else-if="inventory <= 10 && inventory > 5">Almost Sold out</p>
       <p v-else-if="inventory <= 5 && inventory > 0">
@@ -26,8 +27,17 @@ export default {
       link:
         "https://www.amazon.com/s/ref=nb_sb_noss?url=search-alias%3Daps&field-keywords=socks",
       inStock: false,
-      inventory: 6,
+      inventory: 5,
+      onSale: true,
     };
+  },
+  methods: {
+    onSaleView() {
+      let data = this.inventory;
+      if (data <= 5 && data > 0) {
+        return (this.onSale = true);
+      }
+    },
   },
 };
 </script>
