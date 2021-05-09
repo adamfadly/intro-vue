@@ -28,6 +28,15 @@ const routes = [
         /* webpackChunkName: "ListRendering" */ "../views/ListRendering.vue"
       ),
   },
+  {
+    path: "/event-handling",
+    name: "Event Handling",
+
+    component: () =>
+      import(
+        /* webpackChunkName: "EventsHandling" */ "../views/EventHandling.vue"
+      ),
+  },
 ];
 
 const router = new VueRouter({

@@ -6,7 +6,8 @@
         >Conditional Rendering
       </router-link>
       |
-      <router-link to="/list-rendering">List Rendering</router-link>
+      <router-link to="/list-rendering">List Rendering</router-link> |
+      <router-link to="/event-handling">Event Handling</router-link>
     </div>
     <router-view />
   </div>
