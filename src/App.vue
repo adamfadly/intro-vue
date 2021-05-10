@@ -7,7 +7,8 @@
       </router-link>
       |
       <router-link to="/list-rendering">List Rendering</router-link> |
-      <router-link to="/event-handling">Event Handling</router-link>
+      <router-link to="/event-handling">Event Handling</router-link> |
+      <router-link to="/class-style-binding">Class & Style Binding</router-link>
     </div>
     <router-view />
   </div>

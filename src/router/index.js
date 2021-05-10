@@ -37,6 +37,15 @@ const routes = [
         /* webpackChunkName: "EventsHandling" */ "../views/EventHandling.vue"
       ),
   },
+  {
+    path: "/class-style-binding",
+    name: "Class Style Binding",
+
+    component: () =>
+      import(
+        /* webpackChunkName: "ClassStyleBinding" */ "../views/ClassStyleBinding.vue"
+      ),
+  },
 ];
 
 const router = new VueRouter({
