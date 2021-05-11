@@ -46,6 +46,15 @@ const routes = [
         /* webpackChunkName: "ClassStyleBinding" */ "../views/ClassStyleBinding.vue"
       ),
   },
+  {
+    path: "/computed-properties",
+    name: "Computed Properties",
+
+    component: () =>
+      import(
+        /* webpackChunkName: "ComputedProperties" */ "../views/ComputedProperties.vue"
+      ),
+  },
 ];
 
 const router = new VueRouter({
